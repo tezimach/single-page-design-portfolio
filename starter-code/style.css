@@ -1,0 +1,94 @@
+.bg-purple {
+    background-color: #755CDE;
+}
+
+.bg-orange {
+    background-color: #F6A560;
+}
+
+.bg-pink {
+    background-color: #F39E9E;
+}
+
+.bg-pink-dark {
+    background-color: #EB7565;
+}
+
+.bg-sky {
+    background-color: #61C4B7;
+}
+
+.bg-aubergine {
+    background-color: #552049;
+}
+
+.bg-black {
+    background-color: #030303;
+}
+
+.bg-light-cream {
+    background-color: #FFF7F0;
+}
+
+
+
+.text-black {
+    color: #030303;
+}
+
+.text-medium-brown {
+    color: #7A746E;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+
+.heading-large {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 71px;
+}
+
+.heading-medium {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.heading-small {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.paragraph {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.text-button {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.text-field-headline {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
