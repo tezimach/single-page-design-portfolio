@@ -9,35 +9,50 @@
   <link rel="stylesheet" href="./style.css">
   <title>Single-page design portfolio</title>
 </head>
-<body>
+<body class="bg-light-cream">
   <header>
-    <img src="./assets/logo.svg" alt="logo">
+    <img class="logo" src="./assets/logo.svg" alt="logo">
     <a class="bg-black text-white text-button" href="#">Free Consultation</a>
   </header>
   <h1 class="heading-large">Design solutions made easy</h1>
   <p class="paragraph text-medium-brown">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
-  <div>
-    <div class="text-white text-field-headline bg-purple">Graphic Design</div>
-    <div class="text-white text-field-headline bg-orange">UI/UX</div>
-    <div class="text-white text-field-headline bg-pink">Apps</div>
-    <div class="text-white text-field-headline bg-sky">Photography</div>
-    <div class="text-white text-field-headline bg-pink-dark">Illustrations</div>
-    <div class="text-white text-field-headline bg-aubergine">Motion Graphics</div>
+  <div class="field-container">
+    <div class="text-white text-field-headline bg-purple design">Graphic Design</div>
+    <div class="text-white text-field-headline bg-orange uiux">UI/UX</div>
+    <div class="text-white text-field-headline bg-pink apps">Apps</div>
+    <div class="text-white text-field-headline bg-pink-dark illustrations">Illustrations</div>
+    <div class="text-white text-field-headline bg-sky photography">Photography</div>
+    <div class="text-white text-field-headline bg-aubergine motion-graphics">Motion Graphics</div>
   </div>
-  <img src="./assets/image-amy.webp" alt="photo-of-amy">
-  <div>
+  <img class="amy" src="./assets/image-amy.webp" alt="photo-of-amy">
+  <div class="profile-container">
     <h2 class="heading-medium">I’m Amy, and I’d love to work on your next project</h2>
     <p class="paragraph text-medium-brown">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
     <a class="bg-pink-dark text-white text-button" href="#">Free Consultation</a>
   </div>
-  <h2 class="heading-small">My Work</h2>
-  <div class="bg-black">
+  <h3 class="heading-small">My Work</h3>
+  <div class="slider">
+    <img class="slide" src="./assets/image-slide-1.jpg" alt="">
+    <img class="slide" src="./assets/image-slide-2.jpg" alt="">
+    <img class="slide" src="./assets/image-slide-3.jpg" alt="">
+    <img class="slide" src="./assets/image-slide-4.jpg" alt="">
+    <img class="slide" src="./assets/image-slide-5.jpg" alt="">
+  </div>
+  <div>
+    <button class="bg-black">
+      <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path fill="#FFF" d="M8 0 0 8l8 8 1.687-1.687-5.121-5.12h10.241V6.807H4.566l5.121-5.12z"/></svg>
+    </button>
+    <button class="bg-black">
+      <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path fill="#FFF" d="m6.808 16 8-8-8-8-1.687 1.687 5.121 5.12H.001v2.386h10.241l-5.121 5.12z"/></svg>
+    </button>
+  </div>
+  <div class="bg-black call-container">
     <h2 class="heading-medium text-white">Book a call with me</h2>
     <p class="paragraph text-white">I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
     <a class="bg-pink-dark text-white text-button" href="#">Free Consultation</a>
   </div>
   <footer>
-    <img src="./assets/logo.svg" alt="logo">
+    <img class="logo" src="./assets/logo.svg" alt="logo">
     <a class="bg-black text-white text-button" href="#">Free Consultation</a>
   </footer>
 </body>
