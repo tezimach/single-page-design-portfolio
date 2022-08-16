@@ -192,6 +192,12 @@ p {
     padding: 106px 0 24px 24px;
 }
 
+.photography-motion-graphics-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .photography {
     flex-basis: 100%;
     border-radius: 8px;
@@ -383,5 +389,126 @@ footer {
 
     .call-container p {
         margin-bottom: 26px;
+    }
+}
+
+@media only screen and (min-width: 1423px){
+    .heading-large {
+        font-size: 56px;
+        line-height: 71px;
+    }
+    
+    .heading-medium {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .heading-small {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .logo {
+        margin: 34px 0 66px 11.45%;
+
+    }
+    
+    a {
+        margin: 34px 11.45% 66px 11.45%;
+    }
+
+    h1 {
+        margin-bottom: 23px;
+    }
+
+    p {
+        margin-bottom: 80px;
+        max-width: 770px;
+    }
+
+    .field-container {
+        width: 77.1%;
+        margin: 0 11.45% 136px 11.45%;
+    }
+
+    .design {
+        flex-basis: 31%;
+        margin: 0 24px 0 0;
+    }
+
+    .uiux-app-container {
+        flex-basis: 31%;
+        margin: 0px 24px 0 0;
+    }
+
+    .photography-motion-graphics-container {
+        flex-basis: 31%;
+    }
+
+    .photography {
+        flex-basis: 100%;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    .motion-graphics {
+        flex-basis: 100%;
+        margin: 0px;
+        padding: 106px 0 24px 24px;
+    }
+
+    .amy-container {
+        display: flex;
+        margin: 0 11.45% 88px 11.45%;
+        justify-content: space-between;
+        width: 77.1%;
+        align-items: end;
+    }
+
+    .amy {
+        width: 445px;
+        height: 445px;
+    }
+
+    .profile-container {
+        width: 540px;
+    }
+
+    .call-container {
+        width: 77.1%;
+        flex-direction: row;
+    }
+
+    .text-box {
+        text-align: left;
+        margin-left: 65px;
+    }
+
+    .text-box p {
+        margin: 0px;
+        margin-bottom: 80px;
+        width: 540px;
+    }
+
+    a:hover {
+        background-color: #755CDE;
+    }
+    
+    .profile-container a:hover {
+        background-color:#F6A560;
+    }
+
+    .call-container a:hover {
+        background-color:#F6A560;
+    }
+
+    #left-arrow:hover {
+        background-color: #755CDE;
+        cursor: pointer;
+    }
+
+    #right-arrow:hover {
+        background-color: #755CDE;
+        cursor: pointer;
     }
 }
