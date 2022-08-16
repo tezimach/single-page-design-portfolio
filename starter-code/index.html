@@ -18,17 +18,21 @@
   <p class="paragraph text-medium-brown">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
   <div class="field-container">
     <div class="text-white text-field-headline bg-purple design">Graphic Design</div>
-    <div class="text-white text-field-headline bg-orange uiux">UI/UX</div>
-    <div class="text-white text-field-headline bg-pink apps">Apps</div>
-    <div class="text-white text-field-headline bg-pink-dark illustrations">Illustrations</div>
+    <div class="uiux-app-container">
+      <div class="text-white text-field-headline bg-orange uiux">UI/UX</div>
+      <div class="text-white text-field-headline bg-pink apps">Apps</div>
+      <div class="text-white text-field-headline bg-pink-dark illustrations">Illustrations</div>
+    </div>
     <div class="text-white text-field-headline bg-sky photography">Photography</div>
     <div class="text-white text-field-headline bg-aubergine motion-graphics">Motion Graphics</div>
   </div>
-  <img class="amy" src="./assets/image-amy.webp" alt="photo-of-amy">
-  <div class="profile-container">
-    <h2 class="heading-medium">I’m Amy, and I’d love to work on your next project</h2>
-    <p class="paragraph text-medium-brown">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
-    <a class="bg-pink-dark text-white text-button" href="#">Free Consultation</a>
+  <div class="amy-container">
+    <img class="amy" src="./assets/image-amy.webp" alt="photo-of-amy">
+    <div class="profile-container">
+      <h2 class="heading-medium">I’m Amy, and I’d love to work on your next project</h2>
+      <p class="paragraph text-medium-brown">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+      <a class="bg-pink-dark text-white text-button" href="#">Free Consultation</a>
+    </div>
   </div>
   <h3 class="heading-small">My Work</h3>
   <div class="slider">
@@ -60,28 +64,29 @@
 <script>
   const leftArrow = document.getElementById("left-arrow");
   const rightArrow = document.getElementById("right-arrow");
-  const slider = document.getElementsByClassName("slider")[0];
-  const slideFirst = document.getElementsByClassName("slide")[0];
-  const slideLast = document.getElementsByClassName("slide")[4];
+  const slide = document.getElementsByClassName("slide")[0];
+  const width = slide.offsetWidth;
+  const space = parseInt(window.getComputedStyle(slide).marginLeft.slice(0,2));
+  const slideDistance = (width+space*2)*2;
   let x = 0;
-  let y = 0;
 
   leftArrow.addEventListener("click", ()=>{
-    if (x<1140){
-      x = x + 570;
+    if (x<slideDistance*2){
+      x = x + slideDistance;
+      console.log(x);
     } else {
-      x = -1140;
+      x = -slideDistance*2;
     }
-    slideFirst.style.marginLeft = `${x}px`;
+    slide.style.marginLeft = `${x}px`;
   });
 
   rightArrow.addEventListener("click", ()=>{
-    if (x>-1140){
-      x = x - 570;
+    if (x>-slideDistance*2){
+      x = x - slideDistance;
     } else {
-      x = 1140;
+      x = slideDistance*2;
     }
-    slideFirst.style.marginLeft = `${x}px`;
+    slide.style.marginLeft = `${x}px`;
   });
 </script>
 </html>
