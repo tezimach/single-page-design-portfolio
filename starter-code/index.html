@@ -39,10 +39,10 @@
     <img class="slide" src="./assets/image-slide-5.jpg" alt="">
   </div>
   <div>
-    <button class="bg-black">
+    <button id="left-arrow" class="bg-black">
       <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path fill="#FFF" d="M8 0 0 8l8 8 1.687-1.687-5.121-5.12h10.241V6.807H4.566l5.121-5.12z"/></svg>
     </button>
-    <button class="bg-black">
+    <button id="right-arrow" class="bg-black">
       <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path fill="#FFF" d="m6.808 16 8-8-8-8-1.687 1.687 5.121 5.12H.001v2.386h10.241l-5.121 5.12z"/></svg>
     </button>
   </div>
@@ -56,4 +56,32 @@
     <a class="bg-black text-white text-button" href="#">Free Consultation</a>
   </footer>
 </body>
+
+<script>
+  const leftArrow = document.getElementById("left-arrow");
+  const rightArrow = document.getElementById("right-arrow");
+  const slider = document.getElementsByClassName("slider")[0];
+  const slideFirst = document.getElementsByClassName("slide")[0];
+  const slideLast = document.getElementsByClassName("slide")[4];
+  let x = 0;
+  let y = 0;
+
+  leftArrow.addEventListener("click", ()=>{
+    if (x<1140){
+      x = x + 570;
+    } else {
+      x = -1140;
+    }
+    slideFirst.style.marginLeft = `${x}px`;
+  });
+
+  rightArrow.addEventListener("click", ()=>{
+    if (x>-1140){
+      x = x - 570;
+    } else {
+      x = 1140;
+    }
+    slideFirst.style.marginLeft = `${x}px`;
+  });
+</script>
 </html>

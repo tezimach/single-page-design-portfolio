@@ -235,6 +235,8 @@ h3 {
     width: 270px;
     margin: 0 7.5px 30px 7.5px;
     border-radius: 10px;
+    transition-property: margin-left;
+    transition-duration: 2s;
 }
 
 button {
